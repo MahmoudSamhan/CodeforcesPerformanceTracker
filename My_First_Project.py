@@ -1,5 +1,5 @@
 import requests,re,csv
-class CF_User(): #محمد العمري
+class CF_User(): 
     def __init__(self,handle,rank,rating):
         self.handle = handle
         self.rank = rank
@@ -23,7 +23,7 @@ class CF_User(): #محمد العمري
 
 
 
-class Member(CF_User):#فهد دهامشة
+class Member(CF_User):
     def __init__(self,handle,rank="Unranked",rating=0):
         super().__init__(handle,rank,rating)
         self.submissions = []
@@ -119,7 +119,7 @@ class Member(CF_User):#فهد دهامشة
                     
 
 
-class Problem():#غيث 
+class Problem(): 
     def __init__(self,contest_id,index,title,tags):
         self.contest_id = contest_id
         self.index  = index
@@ -142,7 +142,7 @@ class Problem():#غيث
 
 
 
-class ScoutSystem():#محمود سمحان
+class ScoutSystem():
     def __init__(self,group_name):
         self.group_name = group_name
         self.Members = []
@@ -274,7 +274,7 @@ class ScoutSystem():#محمود سمحان
         # Clear the memory 
         self.Members.clear() 
         print(f"Done! Check your folder for {file_name}.")
-#غيث
+        
 print("Initializing ScoutSystem...")
 my_tracker = ScoutSystem("IT Team Tracker")
 
